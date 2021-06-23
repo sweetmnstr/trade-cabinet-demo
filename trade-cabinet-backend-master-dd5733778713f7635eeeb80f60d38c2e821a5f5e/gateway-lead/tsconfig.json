@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "outDir": "./build",
+        "target": "esnext",
+        // "sourceMap": true,
+        "inlineSourceMap": true,
+        "declaration": false, // generate d.ts files in build
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        // "baseUrl": "./",
+        "allowSyntheticDefaultImports": true,
+        "incremental": true,
+
+        // "strict": true
+        // "strictPropertyInitialization": true,
+        // Enable all strict type-checking options.
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        // Raise error on 'this' expressions with an implied 'any' type.
+        "alwaysStrict": true,
+        "noUnusedLocals": false, // For DEV
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": false
+    },
+    // "files": ["*.ts"],
+    "include": ["src/**/*", "node_modules/lib-http-server/lib/custom.d.ts", "node_modules/trade-cabinet-types/lib/index.d.ts"],
+    "exclude": ["build", "src/test.ts", "test", "old_src"]
+}

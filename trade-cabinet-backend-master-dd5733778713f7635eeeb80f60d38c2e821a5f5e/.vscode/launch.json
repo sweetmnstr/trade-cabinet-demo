@@ -1,0 +1,40 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Gateway-Lead",
+            "outputCapture": "std",
+            "runtimeArgs": [],
+            "args": ["ts", "./src"],
+            "outFiles": ["${workspaceFolder}/src/**/*", "!**/node_modules/**"],
+            "resolveSourceMapLocations": null,
+            "cwd": "${workspaceFolder}/gateway-lead",
+            "sourceMaps": true,
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Service-users",
+            "outputCapture": "std",
+            "runtimeArgs": [],
+            "args": ["ts", "./src"],
+            "outFiles": ["${workspaceFolder}/src/**/*", "!**/node_modules/**"],
+            "resolveSourceMapLocations": null,
+            "cwd": "${workspaceFolder}/service-users",
+            "sourceMaps": true,
+            "console": "integratedTerminal"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Gateway-Leads Auth",
+            "configurations": ["Gateway-Lead", "Service-users"]
+        }
+    ]
+}

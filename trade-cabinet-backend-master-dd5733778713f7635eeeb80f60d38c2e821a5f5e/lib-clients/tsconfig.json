@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "commonjs",
+        "lib": ["ESNext", "ES2019"],
+        "declaration": true,
+        "outDir": "build",
+        "strict": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "removeComments": false
+    },
+    "include": [
+        "lib/**/*",
+        "node_modules/lib-rpc/build/index.d.ts",
+        "node_modules/lib-http-server/lib/custom.d.ts"
+    ],
+    "exclude": ["build", "src/test.ts", "test", "old_src", "../**/*.spec.ts"]
+}

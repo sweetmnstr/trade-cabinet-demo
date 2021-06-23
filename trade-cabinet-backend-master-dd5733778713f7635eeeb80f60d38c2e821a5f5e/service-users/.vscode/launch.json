@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Launch Program",
+            "outputCapture": "std",
+            "runtimeArgs": [],
+            "args": ["ts", "./src"],
+            "resolveSourceMapLocations": null,
+            "sourceMaps": true,
+            "env": {
+                "TS": "true",
+                "TS_NODE_FILES": "true",
+                "TS_NODE_PROJECT": "tsconfig.json",
+                "TS_NODE_CACHE_DIRECTORY": ".ts-node",
+                "DEBUG": "true"
+            },
+            "console": "integratedTerminal"
+        }
+    ]
+}

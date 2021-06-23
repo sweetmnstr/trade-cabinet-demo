@@ -1,0 +1,15 @@
+{
+  "name": "trade-cabinet-types",
+  "version": "1.0.0",
+  "description": "",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/socket.io": "^2.1.13",
+    "lib-http-server": "file:../lib-http-server"
+  }
+}

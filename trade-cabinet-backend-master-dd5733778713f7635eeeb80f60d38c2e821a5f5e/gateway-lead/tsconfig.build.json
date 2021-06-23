@@ -1,0 +1,10 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "allowJs": false,
+        "checkJs": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    },
+    "exclude": ["build", "src/test.ts", "test", "old_src", "**/*spec.ts"]
+}
